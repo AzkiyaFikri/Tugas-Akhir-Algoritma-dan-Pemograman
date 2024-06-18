@@ -1,0 +1,207 @@
+#include <stdio.h>
+//NAMA : AZKIYA FIKRI 
+//NIM : 12250511014
+void agaklain(){
+    int b,saldo;
+    printf("TARIK TUNAI\n");
+    printf("Masukan Nominal:");
+    scanf("%i", &b);
+    saldo = 10000000 - b;
+    if(b > 10000000){
+        printf("Saldo anda kurang\n");
+    }else{    
+        printf("saldo rekening anda : Rp %d\n",saldo);
+        printf("SILAHKAN AMBIL UANG ANDA\n");
+    }
+    printf("          Terimakasih \ntelah menggunakan layanan kami\n\n\n\n\n");
+}    
+
+void tarikichigo(){
+    int b,saldo;
+    printf("TARIK TUNAI\n");
+    printf("Nominal: Rp 1.500.000\n");
+    saldo = 10000000 - 1500000;
+    if(saldo < 0){
+        printf("Saldo anda kurang\n");
+    }else{    
+        printf("saldo rekening anda : Rp %d\n",saldo);
+        printf("SILAHKAN AMBIL UANG ANDA\n");
+    }
+    printf("          Terimakasih \ntelah menggunakan layanan kami\n\n\n\n\n");
+}   
+
+void tariksjt(){
+    int b,saldo;
+    printf("TARIK TUNAI\n");
+    printf("Nominal: Rp 1.000.000\n");
+    saldo = 10000000 - 1000000;
+    if(saldo < 0){
+        printf("Saldo anda kurang\n");
+    }else{    
+        printf("saldo rekening anda : Rp %d\n",saldo);
+        printf("SILAHKAN AMBIL UANG ANDA\n");
+    }
+    printf("          Terimakasih \ntelah menggunakan layanan kami\n\n\n\n\n");
+}   
+
+void tariksan(){
+    int b,saldo;
+    printf("TARIK TUNAI\n");
+    printf("Nominal: Rp 300.000\n");
+    saldo = 10000000 - 300000;
+    if(saldo < 0){
+        printf("Saldo anda kurang\n");
+    }else{    
+        printf("saldo rekening anda : Rp %d\n",saldo);
+        printf("SILAHKAN AMBIL UANG ANDA\n");
+    }
+    printf("          Terimakasih \ntelah menggunakan layanan kami\n\n\n\n\n");
+}    
+
+void tarikni(){
+    int b,saldo;
+    printf("TARIK TUNAI\n");
+    printf("Nominal: Rp 200.000\n");
+    saldo = 10000000 - 200000;
+    if(saldo < 0){
+        printf("Saldo anda kurang\n");
+    }else{    
+        printf("saldo rekening anda : Rp %d\n",saldo);
+        printf("SILAHKAN AMBIL UANG ANDA\n");
+    }
+    printf("          Terimakasih \ntelah menggunakan layanan kami\n\n\n\n\n");
+}    
+
+void tarikcepek(){
+    int b,saldo;
+    printf("TARIK TUNAI\n");
+    printf("Nominal: Rp 100.000\n");
+    saldo = 10000000 - 100000;
+    if(saldo < 0){
+        printf("Saldo anda kurang\n");
+    }else{    
+        printf("saldo rekening anda : Rp %d\n",saldo);
+        printf("SILAHKAN AMBIL UANG ANDA\n");
+    }
+    printf("          Terimakasih \ntelah menggunakan layanan kami\n\n\n\n\n");
+}    
+
+void menutarik(){
+printf("                MENU PENARIKAN CEPAT \n\n");
+printf("           SILAKAN PILIH JUMLAH PENARIKAN\n\n");
+printf("               PECAHAN UANG Rp 100.000\n\n\n");
+printf("  1. 100.000                         4. 1.000.000\n\n\n");
+printf("  2. 200.000                         5. 1.500.000\n\n\n");
+printf("  3. 300.000                         6. Jumlah Lain\n\n\n");
+printf("                                     7. Selesai\n\n");
+
+
+    int nilai;
+	printf("\n\nPILIHAN:");
+	scanf("%i",&nilai);
+    printf("\n\n");
+	
+	switch(nilai){
+		case 1:
+			tarikcepek();
+			break;
+        case 2:
+			tarikni();
+			break;
+		case 3:
+			tariksan();
+			break;
+        case 4:
+			tariksjt();
+			break;
+        case 5:
+			tarikichigo();
+			break;    
+        case 6:
+			agaklain();
+			break;    
+		default:
+            printf("TERIMAKASIH\n\n\n");
+}
+}
+
+    void setor(){
+    int b,saldo;
+    printf("     SETOR TUNAI\n");
+    printf("PECAHAN UANG Rp 100.000\n");
+    printf("SILAHKAN MASUKAN UANG ANDA DENGAN RAPI\n");
+    printf("MASUKAN NOMINAL:");
+    scanf("%i", &b);
+    saldo = 10000000 + b;
+    printf("TRANSAKSI BERHASIL\n");
+    printf("SALDO REKENING ANDA : Rp %d\n",saldo);
+    printf("          Terimakasih \ntelah menggunakan layanan kami\n\n\n\n\n");
+}    
+    
+void cek(){
+    int saldo = 10000000;
+    printf("saldo rekening anda : Rp %d\n",saldo);
+    printf("          Terimakasih \ntelah menggunakan layanan kami\n\n\n\n\n");
+}
+
+
+void Menu(){
+printf("             Pilih transaksi yang diinginkan\n\n");
+printf("  1. Informasi saldo                    3. Setor tunai\n\n\n");
+printf("  2. Tarik tunai                        4. Selesai\n\n");
+
+    int nilai;
+	printf("PILIHAN:");
+	scanf("%i",&nilai);
+    printf("\n\n");
+	
+	switch(nilai){
+		case 1:
+			cek();
+			break;
+        case 2:
+			menutarik();
+			break;
+		case 3:
+			setor();
+			break;
+		default:
+            printf("Terimakasih\n\n\n");
+}
+}
+
+void login(){
+	int id1 = 112233;
+	int id2, cobalogin;
+    printf("BFI\nBank Fortune Indonesia\n\n");
+	printf("\tSELAMAT DATANG \n");
+    printf("Demi keamanan dan kenyamanan silahkan ganti pin anda secara berkala\n\n\n");
+    while(cobalogin < 3 ){
+	printf("Masukkan PIN ATM Anda :\n");
+	scanf(" %i",&id2);
+    printf("\n\n");
+	
+	
+	if(id1 == id2){
+		printf("\n\n");
+        Menu();
+	}else{
+		printf("PIN Anda salah\n");
+        cobalogin++;
+	}
+}    
+    if(cobalogin == 3){
+        printf("Akun Anda sudah terblokir silah hubungi call center");
+    }    
+}
+int main(){
+	login();
+}
+    
+    
+    
+    
+    
+    
+    
+    
